@@ -7,7 +7,7 @@ console.log('welcome '+userUttar)
 function play(question,answer){
   var userUttar=readlineSync.question(chalk.green(question))
   if (userUttar===answer){score=score+1, console.log(chalk.blue('Total score '+score))}
-  else{console.log(chalk.red('wrong'))}
+  else{console.log(('wrong'))}
  
   
 }
