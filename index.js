@@ -1,10 +1,12 @@
 var readlineSync=require('readline-sync')
+var chalk=require('chalk')
+console.log(chalk.blue('lets play quiz about India'))
 var score=0
-var userUttar=readlineSync.question('whats your name?')
+var userUttar=readlineSync.question(chalk.yellow('whats your name?'))
 console.log('welcome '+userUttar)
 function play(question,answer){
-  var userUttar=readlineSync.question(question)
-  if (userUttar===answer){score=score+1, console.log('Total score '+score)}
+  var userUttar=readlineSync.question(chalk.green(question))
+  if (userUttar===answer){score=score+1, console.log(chalk.blue('Total score '+score))}
   else{console.log('wrong')}
  
   
